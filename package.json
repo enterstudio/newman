@@ -33,7 +33,9 @@
     "build-docs": "node npm/build-docs.js",
     "build-wiki": "node npm/build-wiki.js",
     "publish-docs": "node npm/publish-docs.js",
-    "publish-wiki": "node npm/publish-wiki.js"
+    "publish-wiki": "node npm/publish-wiki.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Postman Labs <help@getpostman.com> (=)",
   "license": "Apache-2.0",
@@ -59,7 +61,8 @@
     "serialised-error": "1.1.2",
     "shelljs": "0.7.7",
     "word-wrap": "1.1.0",
-    "xmlbuilder": "8.2.2"
+    "xmlbuilder": "8.2.2",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "editorconfig": "0.13.2",
@@ -81,5 +84,6 @@
   },
   "engines": {
     "node": ">=4"
-  }
+  },
+  "snyk": true
 }
